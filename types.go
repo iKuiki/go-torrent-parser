@@ -47,7 +47,11 @@ type File struct {
 	Length int64
 }
 
+// Torrent parse result
 type Torrent struct {
+	// Torrent name
+	Name string
+
 	// Announce URL
 	Announce []string
 

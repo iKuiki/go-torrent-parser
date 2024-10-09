@@ -69,6 +69,7 @@ func Parse(reader io.Reader) (*Torrent, error) {
 	}
 
 	return &Torrent{
+		Name:      info.Name,
 		Announce:  announces,
 		Comment:   metadata.Comment,
 		CreatedBy: metadata.CreatedBy,
